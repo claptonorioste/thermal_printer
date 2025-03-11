@@ -312,7 +312,7 @@ class BluetoothConnection constructor(handler: Handler) : IBluetoothConnection {
                     mmInStream?.read(mmBuffer) ?: 0
                 } catch (e: IOException) {
 //                    Log.d(TAG, "Input stream was disconnected", e)
-                    connectionLost()
+                    // connectionLost()
                     break
                 }
                 // Send the obtained bytes to the UI Activity
